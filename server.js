@@ -67,6 +67,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects'
+  });
+});
+
   // Create new page
   // Content-Type: text/html: charset=utf-8
 app.get('/html', (req, res) => {
